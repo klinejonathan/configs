@@ -61,6 +61,7 @@ syntax on
 set wrap linebreak nolist
 set number
 set colorcolumn=80
+set textwidth=80
 " EnableAutoSave
 "
 "
@@ -69,3 +70,8 @@ nmap <C-N><C-N> :set invnumber<CR>
 
 " Silver searcher (ag)
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Fix pararagph spacing using wordwidth
+nnoremap Q gq}
+
+set spell
